@@ -1,7 +1,7 @@
 goodlearnbenchmarks
 =================
 
-Benchmarking framework for machine learning libraries, and benchmark tests for the `[goodlearn](https://github.com/amitkgupta/goodlearn)` library in particular.
+Benchmarking framework for machine learning libraries, and benchmark tests for the [`goodlearn`](https://github.com/amitkgupta/goodlearn) library in particular.
 
 Installation
 ============
