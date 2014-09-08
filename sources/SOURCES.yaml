@@ -1,0 +1,16 @@
+---
+datasets:
+  - paths:
+      - classifier/datasets/basic_test.csv
+      - classifier/datasets/basic_training.csv
+    source: |
+      Bache, K. & Lichman, M. (2013).
+      UCI Machine Learning Repository [http://archive.ics.uci.edu/ml].
+      Irvine, CA: University of California, School of Information and Computer Science.
+  - paths:
+      - classifier/datasets/many_features_test.csv
+      - classifier/datasets/many_features_training.csv
+    source: |
+      Anderson Rocha and Siome Goldenstein.
+      Multiclass from binary: Expanding one-vs-all, one-vs-one and ECOC-based approaches.
+      IEEE Transactions on Neural Networks and Learning Systems, 25(2):289-302, 2014.
