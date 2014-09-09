@@ -20,7 +20,7 @@ var _ = Describe("KNN Classifier", func() {
 
 		manyFeaturesDatasetNumNeighbours           = 1
 		manyFeaturesDatasetExpectedAccuracy        = 0.948
-		manyFeaturesDatasetMaxSecondsTimeThreshold = 60
+		manyFeaturesDatasetMaxSecondsTimeThreshold = 80
 		manyFeaturesDatasetNumRepetitions          = 2
 	)
 
@@ -44,7 +44,7 @@ var _ = Describe("KNN Classifier", func() {
 		Measure("consistently classifies sufficiently quickly", ClassifiesSufficientlyQuickly(&inputs), basicDatasetNumRepetitions)
 	})
 
-	XContext("When given a dataset with many features", func() {
+	Context("When given a dataset with many features", func() {
 		BeforeEach(func() {
 			trainingData, err := csvparse.DatasetFromPath("datasets/many_features_training.csv", 0, 1)
 			Ω(err).ShouldNot(HaveOccurred())
